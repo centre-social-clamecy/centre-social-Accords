@@ -3,7 +3,6 @@ import {
   ArrowRight, 
   MapPin, 
   Phone, 
-  Mail, 
   Menu, 
   X,
   Facebook,
