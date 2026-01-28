@@ -196,15 +196,18 @@ const App = () => {
             </div>
           </div>
           <div className="animate-slide-up-fade" style={{ animationDelay: '0.2s' }}>
-            <h1 className="text-white text-6xl md:text-[7rem] lg:text-[9rem] font-black uppercase leading-[0.85] tracking-tighter mb-8 italic drop-shadow-lg">
-              Vivre <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8bc53f] to-[#fff200]">Ensemble</span>
+            <h1 className="text-white text-7xl md:text-[9rem] lg:text-[12rem] font-bebas uppercase leading-[0.8] tracking-tight mb-8 drop-shadow-2xl">
+              <span className="block opacity-90">Vivre</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8bc53f] to-[#fff200] block mt-2">Ensemble</span>
             </h1>
           </div>
+          {/* DESCRIPTION AVEC FOND BLEU ET BLUR POUR LISIBILITE */}
           <div className="animate-slide-up-fade" style={{ animationDelay: '0.3s' }}>
-            <p className="text-white/90 text-xl md:text-2xl font-medium max-w-2xl leading-relaxed border-l-4 border-[#8bc53f] pl-6 mb-12">
-              Un lieu d'accueil chaleureux, de partage et de solidarité pour dynamiser notre quartier et soutenir vos projets.
-            </p>
+            <div className="bg-[#00158a]/60 backdrop-blur-md p-6 md:p-8 rounded-r-3xl border-l-8 border-[#8bc53f] max-w-2xl mb-12 shadow-2xl">
+              <p className="text-white text-xl md:text-2xl font-medium leading-relaxed">
+                Un lieu d'accueil chaleureux, de partage et de solidarité pour dynamiser notre quartier et soutenir vos projets.
+              </p>
+            </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-up-fade" style={{ animationDelay: '0.4s' }}>
             <button 
@@ -227,7 +230,7 @@ const App = () => {
       </section>
 
       {/* Cards Section */}
-      <section className="relative z-20 -mt-24 px-4 pb-20">
+      <section className="relative z-20 py-16 px-4 pb-20 bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             { id: 'enfance', title: 'Enfance', img: 'https://images.unsplash.com/photo-1472162072942-cd5147eb3902?q=80&w=800', color: 'bg-[#fff200]', text: 'text-[#00158a]', desc: 'Loisirs créatifs et éducatifs.' },
@@ -253,9 +256,9 @@ const App = () => {
         </div>
       </section>
 
-      {/* Intro Text */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-start gap-16">
+      {/* Intro Text - FOND CLAIR AJOUTÉ ICI */}
+      <section className="py-24 px-6 bg-gray-50">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-16">
           <div className="flex-1">
              <h2 className="text-4xl md:text-6xl font-black uppercase text-[#00158a] tracking-tighter leading-none mb-8 italic">
                Au Cœur <br /> du Quartier
@@ -264,13 +267,13 @@ const App = () => {
                Situé rue Bernard Palissy, Accords de Loire est bien plus qu'un centre social. C'est un espace de vie où chaque habitant peut trouver une écoute, participer à des activités ou monter ses propres projets. De la petite enfance aux seniors, nous tissons les liens de demain.
              </p>
           </div>
-          <div className="flex-1 grid grid-cols-2 gap-4">
-             <div className="bg-[#f3f4f6] p-8 rounded-2xl text-center">
-                <span className="block text-4xl font-black text-[#8bc53f] mb-2">30+</span>
+          <div className="flex-1 grid grid-cols-2 gap-4 w-full">
+             <div className="bg-white border border-gray-100 p-8 rounded-3xl text-center shadow-sm">
+                <span className="block text-5xl font-black text-[#8bc53f] mb-2">30+</span>
                 <span className="text-xs font-bold uppercase tracking-widest text-gray-500">Partenaires</span>
              </div>
-             <div className="bg-[#fff200] p-8 rounded-2xl text-center">
-                <span className="block text-4xl font-black text-[#00158a] mb-2">365</span>
+             <div className="bg-[#fff200] p-8 rounded-3xl text-center shadow-md">
+                <span className="block text-5xl font-black text-[#00158a] mb-2">365</span>
                 <span className="text-xs font-bold uppercase tracking-widest text-[#00158a]">Jours d'actions</span>
              </div>
           </div>
