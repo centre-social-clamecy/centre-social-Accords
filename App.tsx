@@ -196,9 +196,8 @@ const App = () => {
             </div>
           </div>
           <div className="animate-slide-up-fade" style={{ animationDelay: '0.2s' }}>
-            <h1 className="text-white text-7xl md:text-[9rem] lg:text-[12rem] font-bebas uppercase leading-[0.8] tracking-tight mb-8 drop-shadow-2xl">
-              <span className="block opacity-90">Vivre</span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8bc53f] to-[#fff200] block mt-2">Ensemble</span>
+            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-tight tracking-tight mb-8 drop-shadow-2xl">
+              Centre Social <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8bc53f] to-[#fff200]">Accords de Loire</span>
             </h1>
           </div>
           {/* DESCRIPTION AVEC FOND BLEU ET BLUR POUR LISIBILITE */}
